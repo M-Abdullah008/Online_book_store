@@ -1,7 +1,7 @@
 function Fee(props){
     return(
         <div className="Fee">
-            price:{props.price}
+            {props.price}
         </div>
     )
 }

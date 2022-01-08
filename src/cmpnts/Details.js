@@ -3,10 +3,13 @@ import Duration from './Duration'
 function Details(props){
     return(
         <div className="Details">
-            name:{props.name}
+            {props.name}
+            {/* <br></br> */}
+            {props.mentor}
             <br></br>
-            mentor:{props.mentor}
-            <br></br>
+            <div style={{width: "100%", height: "20px"}}>
+
+            </div>
             <Duration duration={props.duration}/>
         </div>
     )

@@ -10,10 +10,8 @@ class App extends React.Component{
     constructor(){
       super();
       this.state = { 
-        name:"Database programming",
-        mentor:"Abdullah",
-        duration:"3 hrs",
-        price:"$9"
+        name:"Online Book Store",
+        mentor:"Developed by Abdullah"
     };
     }
     
@@ -26,13 +24,17 @@ class App extends React.Component{
   render(){
   return (
     <div className="App">
+      <div className='app_section'>
+
+      
       {/* name=<b>{this.state.name}</b>
       <br></br>
       duration=<b>{this.state.duration}</b> */}
       <bookImg />
       <review />
-      <Details name={this.state.name} duration={this.state.duration} mentor={this.state.mentor}/>
-      <Fee price={this.state.price}/>
+      <Details name={<h2 style={{marginBottom:"8px"}}>{this.state.name}</h2>} mentor={this.state.mentor} duration={this.state.duration}/>
+      {/* <Fee price={this.state.price}/> */}
+      </div>
     </div>
   )
     }
